@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ora.qh.entity.mapper.MenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ora.qh.entity.model.Menu">
+        <result column="USER_ID" property="userId" />
+        <result column="USERNAME" property="username" />
+        <result column="MENU_FLAG" property="menuFlag" />
+        <result column="CARD_ID" property="cardId" />
+        <result column="BILL_ID" property="billId" />
+        <result column="ACTIVE_CODE" property="activeCode" />
+        <result column="START_DATE" property="startDate" />
+        <result column="END_DATE" property="endDate" />
+        <result column="STATE" property="state" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        USER_ID, USERNAME, MENU_FLAG, CARD_ID, BILL_ID, ACTIVE_CODE, START_DATE, END_DATE, STATE
+    </sql>
+
+</mapper>
